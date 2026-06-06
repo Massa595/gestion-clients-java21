@@ -70,6 +70,8 @@ Exemple de payload :
 ./mvnw spring-boot:run
 L'application démarre sur : http://localhost:8080
 
+---
+
 ##  🧪 Exemples d'appels API
 Récupérer tous les clients : GET /clients
 Récupérer un client        : GET /clients/1
