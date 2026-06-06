@@ -62,29 +62,59 @@ Exemple de payload :
 
 ## 🚀 Lancer le projet
 
-###  Prérequis
-              Java 21+
-              Maven
+### Prérequis
+
+* Java 21+
+* Maven
 
 ### Commande
+
+```bash
 ./mvnw spring-boot:run
-L'application démarre sur : http://localhost:8080
+```
+
+L'application démarre sur :
+
+```text
+http://localhost:8080
+```
 
 ---
 
-##  🧪 Exemples d'appels API
-Récupérer tous les clients : GET /clients
-Récupérer un client        : GET /clients/1
-Ajouter un client          : POST /clients
-                             Content-Type: application/json
-                             {
-                              "id": 4,
-                              "nom": "MARTIN",
-                              "email": "martin@mail.com"
-                             }
+## 🧪 Exemples d'appels API
+
+### Récupérer tous les clients
+
+```http
+GET /clients
+```
+
+### Récupérer un client
+
+```http
+GET /clients/1
+```
+
+### Ajouter un client
+
+```http
+POST /clients
+Content-Type: application/json
+```
+
+```json
+{
+  "id": 4,
+  "nom": "MARTIN",
+  "email": "martin@mail.com"
+}
+```
+
+---
 
 ## 📁 Structure du projet
 
+```text
 src/main/java/com/Massa/gestion_clients
 │
 ├── controller
@@ -97,24 +127,34 @@ src/main/java/com/Massa/gestion_clients
 │   └── Client.java
 │
 └── GestionClientsApplication.java
+```
 
-##  🎯 Objectif pédagogique
+---
+
+## 🎯 Objectif pédagogique
 
 Ce projet permet de comprendre :
 
-Le fonctionnement de Spring Boot
-La création d’une API REST
-Le pattern Controller / Service
-La gestion des requêtes HTTP
-La sérialisation JSON automatique
+* Le fonctionnement de Spring Boot
+* La création d'une API REST
+* Le pattern Controller / Service
+* La gestion des requêtes HTTP
+* La sérialisation JSON automatique
 
-##  🔜 Améliorations possibles
-Ajout de PostgreSQL (Spring Data JPA)
-Validation des données
-Gestion des erreurs (404, etc.)
-PUT / DELETE (CRUD complet)
-Documentation Swagger
-Tests unitaires (JUnit / Mockito)
+---
 
-##   👤 Auteur
-Projet réalisé dans un contexte d'apprentissage Java backend.
+## 🔜 Améliorations possibles
+
+* Ajout de PostgreSQL avec Spring Data JPA
+* Validation des données
+* Gestion des erreurs (404, etc.)
+* Implémentation complète du CRUD (PUT / DELETE)
+* Documentation Swagger / OpenAPI
+* Tests unitaires avec JUnit et Mockito
+
+---
+
+## 👤 Auteur
+
+Projet réalisé dans un contexte d'apprentissage du développement backend Java avec Spring Boot.
+
